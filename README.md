@@ -6,5 +6,5 @@ markdown-newtab
 ![CC0 License](https://img.shields.io/badge/license-CC0-lightgrey.svg)
 
 This extension modifies the HTML output of Python-Markdown to open all
-links in a new tab by adding `target="_blank"`. There isn't much else to
-say.
+links in a new tab by adding `target="_blank"`. See `run_tests.py` for
+example usage.
