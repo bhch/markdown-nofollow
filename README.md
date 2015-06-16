@@ -1,10 +1,17 @@
-markdown-newtab
-===============
+# markdown-nofollow
 
-[![Build Status](https://travis-ci.org/Undeterminant/markdown-newtab.svg?branch=master)](https://travis-ci.org/Undeterminant/markdown-newtab)
-[![PyPI](https://img.shields.io/pypi/v/markdown-newtab.svg)](https://pypi.python.org/pypi/markdown-newtab)
-![CC0 License](https://img.shields.io/badge/license-CC0-lightgrey.svg)
+This extension modifies the HTML output of Python-Markdown to add `rel="nofollow"` attribute to all links.
 
-This extension modifies the HTML output of Python-Markdown to open all
-links in a new tab by adding `target="_blank"`. See `run_tests.py` for
-example usage.
+# Usage
+
+  >>> import markdown
+  >>> from md_nofollow import NofollowExtension
+  
+  >>> raw_text = "Lets add nofollow to [links](http://github.com)"
+  >>> markdown.markdown(raw_text, extensions=[NofollowExtension()]
+  "<p>Lets add nofollow to <a href="http://github.com" rel="nofollow">links</a></p>"
+  
+
+# Credits
+
+This is a fork of [markdown-newtab](https://github.com/Undeterminant/markdown-newtab) which adds `target="_blank"` to links. The code has been modifed to add `rel="nofollow"`. 
