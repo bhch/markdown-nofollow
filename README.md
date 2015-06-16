@@ -4,12 +4,13 @@ This extension modifies the HTML output of Python-Markdown to add `rel="nofollow
 
 # Usage
 
-  >>> import markdown
-  >>> from md_nofollow import NofollowExtension
-  
-  >>> raw_text = "Lets add nofollow to [links](http://github.com)"
-  >>> markdown.markdown(raw_text, extensions=[NofollowExtension()]
-  "<p>Lets add nofollow to <a href="http://github.com" rel="nofollow">links</a></p>"
+    >>> import markdown
+    >>> from md_nofollow import NofollowExtension
+    >>> 
+    >>> raw_text = "Lets add nofollow to [links](http://github.com)"
+    >>> markdown.markdown(raw_text, extensions=[NofollowExtension()]
+    
+    "<p>Lets add nofollow to <a href="http://github.com" rel="nofollow">links</a></p>"
   
 
 # Credits
