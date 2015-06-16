@@ -2,7 +2,7 @@
 
 This extension modifies the HTML output of Python-Markdown to add `rel="nofollow"` attribute to all links.
 
-# Usage
+## Usage
 
     >>> import markdown
     >>> from md_nofollow import NofollowExtension
@@ -13,6 +13,6 @@ This extension modifies the HTML output of Python-Markdown to add `rel="nofollow
     "<p>Lets add nofollow to <a href="http://github.com" rel="nofollow">links</a></p>"
   
 
-# Credits
+## Credits
 
 This is a fork of [markdown-newtab](https://github.com/Undeterminant/markdown-newtab) which adds `target="_blank"` to links. The code has been modifed to add `rel="nofollow"`. 
